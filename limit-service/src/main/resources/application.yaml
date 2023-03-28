@@ -1,1 +1,7 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
 
+limit-service:
+  minimum: 2
+  maximum: 998
