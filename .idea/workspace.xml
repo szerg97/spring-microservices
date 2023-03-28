@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="changed workspace">
+    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="created exchange service">
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/controller/CurrencyExchangeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/model/CurrencyExchange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/service/CurrencyExchangeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/limit-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/limit-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +55,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "C:/Users/szerg/IdeaProjects/spring-microservices/currency-conversion-service/src/main/java/com/microservices/currencyconversionservice",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "spring.configuration.checksum": "d0cad39dff71bb11479c083156981361"
@@ -58,6 +65,12 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.microservices.limitservice.model" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\szerg\IdeaProjects\spring-microservices\currency-conversion-service\src\main\java\com\microservices\currencyconversionservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.microservices.currencyconversionservice.model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -66,10 +79,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LimitServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CurrencyExchangeServiceApplication">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyConversionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="currency-conversion-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.currencyconversionservice.CurrencyConversionServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680013355344</updated>
       <workItem from="1680013357183" duration="6845000" />
-      <workItem from="1680032209235" duration="573000" />
+      <workItem from="1680032209235" duration="4231000" />
     </task>
     <task id="LOCAL-00001" summary="created limits api and configuration">
       <created>1680015325409</created>
@@ -138,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680020751485</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="created exchange service">
+      <created>1680032881152</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680032881152</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,12 +187,14 @@
       <path value="$PROJECT_DIR$/limit-service" />
       <path value="$PROJECT_DIR$/config-server" />
       <path value="$PROJECT_DIR$/currency-exchange-service" />
+      <path value="$PROJECT_DIR$/currency-conversion-service" />
     </ignored-roots>
     <MESSAGE value="created limits api and configuration" />
     <MESSAGE value="configured profile" />
     <MESSAGE value="created config server" />
     <MESSAGE value="changed workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed workspace" />
+    <MESSAGE value="created exchange service" />
+    <option name="LAST_COMMIT_MESSAGE" value="created exchange service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
