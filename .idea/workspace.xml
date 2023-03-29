@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="added routes to AG">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/microservices/apigateway/filter/LoggingFilter.java" afterDir="false" />
+    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="added logging filter to AG">
+      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/controller/CircuitBreakerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +71,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.CurrencyExchangeServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.apigateway.ApiGatewayApplication" />
@@ -90,10 +93,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CurrencyExchangeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
-      <option name="ACTIVE_PROFILES" />
+    <configuration name="CurrencyExchangeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="currency-exchange-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.currencyexchangeservice.CurrencyExchangeServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.currencyexchangeservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,10 +125,15 @@
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.CurrencyConversionServiceApplication" />
-      <item itemvalue="Spring Boot.CurrencyExchangeServiceApplication" />
       <item itemvalue="Spring Boot.LimitServiceApplication" />
       <item itemvalue="Spring Boot.NamingServerApplication" />
+      <item itemvalue="Spring Boot.CurrencyExchangeServiceApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CurrencyExchangeServiceApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBootOptions">
@@ -136,7 +149,7 @@
       <workItem from="1680013357183" duration="6845000" />
       <workItem from="1680032209235" duration="4812000" />
       <workItem from="1680037858842" duration="1587000" />
-      <workItem from="1680079930221" duration="6660000" />
+      <workItem from="1680079930221" duration="8652000" />
     </task>
     <task id="LOCAL-00001" summary="created limits api and configuration">
       <created>1680015325409</created>
@@ -257,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680086407638</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added logging filter to AG">
+      <created>1680086686084</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680086686084</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +319,8 @@
     <MESSAGE value="able to call any microservices which are registered with eureka via api gateway" />
     <MESSAGE value="changed service id to be lower-case" />
     <MESSAGE value="added routes to AG" />
-    <option name="LAST_COMMIT_MESSAGE" value="added routes to AG" />
+    <MESSAGE value="added logging filter to AG" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logging filter to AG" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
