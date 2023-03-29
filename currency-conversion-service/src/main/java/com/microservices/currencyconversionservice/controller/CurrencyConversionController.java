@@ -14,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @RequiredArgsConstructor
 public class CurrencyConversionController {
 
+    private final RestTemplate restTemplate;
     private final CurrencyExchangeProxy proxy;
 
     @GetMapping("/currency-conversion/from/{from}/to/{to}/{quantity}")
@@ -22,7 +23,7 @@ public class CurrencyConversionController {
             @PathVariable String to,
             @PathVariable int quantity
     ){
-        CurrencyExchange exchange = new RestTemplate().getForEntity(
+        CurrencyExchange exchange = restTemplate.getForEntity(
                 "http://localhost:8000/currency-exchange" +
                         "/from/" + from + "/to/" + to, CurrencyExchange.class)
                 .getBody();
