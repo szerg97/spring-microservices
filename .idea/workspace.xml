@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="added more circuit breaker features">
+    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="created microservices diagram">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +145,7 @@
       <workItem from="1680037858842" duration="1587000" />
       <workItem from="1680079930221" duration="8782000" />
       <workItem from="1680093642275" duration="6000" />
-      <workItem from="1680093775662" duration="6007000" />
+      <workItem from="1680093775662" duration="8493000" />
     </task>
     <task id="LOCAL-00001" summary="created limits api and configuration">
       <created>1680015325409</created>
@@ -285,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680095210749</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="created microservices diagram">
+      <created>1680100491801</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1680100491801</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +339,8 @@
     <MESSAGE value="added logging filter to AG" />
     <MESSAGE value="added circuit breaker to exchange service" />
     <MESSAGE value="added more circuit breaker features" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more circuit breaker features" />
+    <MESSAGE value="created microservices diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="created microservices diagram" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
