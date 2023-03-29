@@ -1,5 +1,8 @@
 package com.microservices.currencyexchangeservice.controller;
 
+import io.github.resilience4j.bulkhead.annotation.Bulkhead;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import io.github.resilience4j.retry.annotation.Retry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +17,10 @@ public class CircuitBreakerController {
     private final Logger logger = LoggerFactory.getLogger(CircuitBreakerController.class);
 
     @GetMapping("/sample-api")
-    @Retry(name = "sample-api", fallbackMethod = "hardCodedResponse")
+//    @Retry(name = "sample-api", fallbackMethod = "hardCodedResponse")
+    @CircuitBreaker(name = "sample-api", fallbackMethod = "hardCodedResponse")
+//    @RateLimiter(name = "sample-api")// to limit 10s => 1000 calls to the sample api
+//    @Bulkhead(name = "sample-api")
     public String sampleApi(){
         logger.info("Sample API call received");
         ResponseEntity<String> forEntity = new RestTemplate()
