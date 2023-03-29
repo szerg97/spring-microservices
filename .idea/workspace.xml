@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="able to call any microservices which are registered with eureka via api gateway">
+    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="changed service id to be lower-case">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/microservices/apigateway/config/ApiGatewayConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +138,7 @@
       <workItem from="1680013357183" duration="6845000" />
       <workItem from="1680032209235" duration="4812000" />
       <workItem from="1680037858842" duration="1587000" />
-      <workItem from="1680079930221" duration="4313000" />
+      <workItem from="1680079930221" duration="5979000" />
     </task>
     <task id="LOCAL-00001" summary="created limits api and configuration">
       <created>1680015325409</created>
@@ -243,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680084143331</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changed service id to be lower-case">
+      <created>1680084360569</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680084360569</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +292,8 @@
     <MESSAGE value="created api gateway and registered with eureka" />
     <MESSAGE value="configured api gateway to work with microservices" />
     <MESSAGE value="able to call any microservices which are registered with eureka via api gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="able to call any microservices which are registered with eureka via api gateway" />
+    <MESSAGE value="changed service id to be lower-case" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed service id to be lower-case" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
