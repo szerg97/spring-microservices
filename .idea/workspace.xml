@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="replaced rest template with feign">
+    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="renamed currency exchange service to work with feign">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/microservices/currencyconversionservice/proxy/CurrencyExchangeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/microservices/currencyconversionservice/proxy/CurrencyExchangeProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.NamingServerApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.configserver.ConfigServerApplication" />
@@ -84,7 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CurrencyExchangeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="CurrencyExchangeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+      <option name="ACTIVE_PROFILES" />
       <module name="currency-exchange-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.currencyexchangeservice.CurrencyExchangeServiceApplication" />
       <method v="2">
@@ -99,12 +110,21 @@
       </method>
     </configuration>
     <configuration name="NamingServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="naming-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.namingserver.NamingServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.CurrencyConversionServiceApplication" />
+      <item itemvalue="Spring Boot.CurrencyExchangeServiceApplication" />
+      <item itemvalue="Spring Boot.LimitServiceApplication" />
+      <item itemvalue="Spring Boot.NamingServerApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBootOptions">
@@ -120,7 +140,7 @@
       <workItem from="1680013357183" duration="6845000" />
       <workItem from="1680032209235" duration="4812000" />
       <workItem from="1680037858842" duration="1587000" />
-      <workItem from="1680079930221" duration="1510000" />
+      <workItem from="1680079930221" duration="3104000" />
     </task>
     <task id="LOCAL-00001" summary="created limits api and configuration">
       <created>1680015325409</created>
@@ -199,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680081062958</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="renamed currency exchange service to work with feign">
+      <created>1680081683866</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680081683866</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +250,7 @@
       <path value="$PROJECT_DIR$/currency-exchange-service" />
       <path value="$PROJECT_DIR$/currency-conversion-service" />
       <path value="$PROJECT_DIR$/naming-server" />
+      <path value="$PROJECT_DIR$/api-gateway" />
     </ignored-roots>
     <MESSAGE value="created limits api and configuration" />
     <MESSAGE value="configured profile" />
@@ -234,7 +262,8 @@
     <MESSAGE value="created naming server" />
     <MESSAGE value="registered microservices with naming server" />
     <MESSAGE value="replaced rest template with feign" />
-    <option name="LAST_COMMIT_MESSAGE" value="replaced rest template with feign" />
+    <MESSAGE value="renamed currency exchange service to work with feign" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed currency exchange service to work with feign" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
