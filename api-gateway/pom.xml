@@ -71,6 +71,12 @@
     <build>
         <plugins>
             <plugin>
+                <configuration>
+                    <image>
+                        <name>szalaigeri/${project.artifactId}:${project.version}</name>
+                    </image>
+                    <pullPolicy>ALWAYS</pullPolicy>
+                </configuration>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>

@@ -9,6 +9,19 @@ services:
     networks:
       - currency-network
 
+  api-gateway:
+    image: szalaigeri/api-gateway:0.0.1-SNAPSHOT
+    pull_policy: always
+    ports:
+      - "8765:8765"
+    networks:
+      - currency-network
+    environment:
+      - EUREKA_CLIENT_SERVICE_URL=http://naming-server:8761/eureka
+    depends_on:
+      - naming-server
+    restart: on-failure
+
   exchange-service:
     image: szalaigeri/currency-exchange-service:0.0.1-SNAPSHOT
     pull_policy: always

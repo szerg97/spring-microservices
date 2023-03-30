@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="able to see entire call chain via zipkin">
-      <change afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/config/CurrencyExchangeConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+    <list default="true" id="3a05ff20-d362-430a-9695-c0db59c47fbe" name="Changes" comment="dockerized microservices and naming server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-conversion-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/controller/CurrencyExchangeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/microservices/currencyexchangeservice/controller/CurrencyExchangeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naming-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/naming-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +156,7 @@
       <workItem from="1680093642275" duration="6000" />
       <workItem from="1680093775662" duration="14422000" />
       <workItem from="1680113631523" duration="3096000" />
-      <workItem from="1680174602561" duration="4580000" />
+      <workItem from="1680174602561" duration="5577000" />
     </task>
     <task id="LOCAL-00001" summary="created limits api and configuration">
       <created>1680015325409</created>
@@ -332,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680105417946</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="dockerized microservices and naming server">
+      <created>1680181175421</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1680181175421</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +382,8 @@
     <MESSAGE value="configured exchange service for distributed tracing, zipkin" />
     <MESSAGE value="added micrometer and opentelemetry" />
     <MESSAGE value="able to see entire call chain via zipkin" />
-    <option name="LAST_COMMIT_MESSAGE" value="able to see entire call chain via zipkin" />
+    <MESSAGE value="dockerized microservices and naming server" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockerized microservices and naming server" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
