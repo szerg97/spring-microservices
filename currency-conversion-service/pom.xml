@@ -91,6 +91,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <image>
+                        <name>szalaigeri/${project.artifactId}:${project.version}</name>
+                    </image>
+                    <pullPolicy>ALWAYS</pullPolicy>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>

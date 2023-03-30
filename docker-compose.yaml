@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  naming-server:
+    image: szalaigeri/naming-server:0.0.1-SNAPSHOT
+    pull_policy: always
+    ports:
+      - "8761:8761"
+    networks:
+      - currency-network
+
+  exchange-service:
+    image: szalaigeri/currency-exchange-service:0.0.1-SNAPSHOT
+    pull_policy: always
+    ports:
+      - "8000:8000"
+    networks:
+      - currency-network
+    environment:
+      - EUREKA_CLIENT_SERVICE_URL=http://naming-server:8761/eureka
+    depends_on:
+      - naming-server
+    restart: on-failure
+
+  conversion-service:
+    image: szalaigeri/currency-conversion-service:0.0.1-SNAPSHOT
+    pull_policy: always
+    ports:
+      - "8100:8100"
+    networks:
+      - currency-network
+    environment:
+      - EUREKA_CLIENT_SERVICE_URL=http://naming-server:8761/eureka
+    depends_on:
+      - naming-server
+    restart: on-failure
+
+networks:
+  currency-network:
