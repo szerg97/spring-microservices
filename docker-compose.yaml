@@ -14,12 +14,13 @@ services:
     pull_policy: always
     ports:
       - "8765:8765"
-    networks:
-      - currency-network
     environment:
       - EUREKA_CLIENT_SERVICE_URL=http://naming-server:8761/eureka
+      - ZIPKIN_URL=http://zipkin-server:9411/api/v2/spans
     depends_on:
       - naming-server
+    networks:
+      - currency-network
     restart: on-failure
 
   exchange-service:
@@ -27,12 +28,13 @@ services:
     pull_policy: always
     ports:
       - "8000:8000"
-    networks:
-      - currency-network
     environment:
       - EUREKA_CLIENT_SERVICE_URL=http://naming-server:8761/eureka
+      - ZIPKIN_URL=http://zipkin-server:9411/api/v2/spans
     depends_on:
       - naming-server
+    networks:
+      - currency-network
     restart: on-failure
 
   conversion-service:
@@ -40,12 +42,21 @@ services:
     pull_policy: always
     ports:
       - "8100:8100"
-    networks:
-      - currency-network
     environment:
       - EUREKA_CLIENT_SERVICE_URL=http://naming-server:8761/eureka
+      - ZIPKIN_URL=http://zipkin-server:9411/api/v2/spans
     depends_on:
       - naming-server
+    networks:
+      - currency-network
+    restart: on-failure
+
+  zipkin-server:
+    image: openzipkin/zipkin:2.23
+    ports:
+      - "9411:9411"
+    networks:
+      - currency-network
     restart: on-failure
 
 networks:
